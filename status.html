@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Application Status</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Link to local Bootstrap CSS -->
+    <link href="css/styles1.css" rel="stylesheet"> <!-- Link to your external CSS -->
+
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Check Your Application Status</h1>
+        <form id="statusForm" method="post" action="php/check_status.php">
+            <div class="form-group">
+                <label for="trackingID">Enter Tracking ID:</label>
+                <input type="text" class="form-control" id="trackingID" name="trackingID" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Check Status</button>
+            <a href="index.html" class="btn btn-cancel btn-block">Cancel</a>
+        </form>
+
+        <div class="result">
+            <!-- Status result will be displayed here -->
+            <div id="statusResult"></div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Link to local Bootstrap JS -->
+</body>
+</html>
